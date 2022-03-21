@@ -56,6 +56,14 @@ namespace Pokedex2022_CSharp
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
 
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ficha coso = new Ficha(idActual);
+            coso.Show();
+        }
+        
         private void VentanaPrincipal_Load(object sender, EventArgs e)
         {
 
@@ -64,12 +72,6 @@ namespace Pokedex2022_CSharp
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Ficha coso = new Ficha();
-            coso.Show();
         }
     }
 }
