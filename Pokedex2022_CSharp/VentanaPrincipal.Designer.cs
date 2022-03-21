@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.derecha = new System.Windows.Forms.Button();
             this.nombrePokemon = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +58,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // derecha
             // 
@@ -81,6 +83,16 @@
             this.nombrePokemon.TabIndex = 3;
             this.nombrePokemon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(121, 387);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 34);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -88,6 +100,7 @@
             this.BackgroundImage = global::Pokedex2022_CSharp.Properties.Resources.Pokedex;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(631, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.derecha);
             this.Controls.Add(this.pictureBox1);
@@ -107,6 +120,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button derecha;
         private System.Windows.Forms.Label nombrePokemon;
+        private System.Windows.Forms.Button button1;
     }
 }
 

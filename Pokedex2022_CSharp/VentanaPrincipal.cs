@@ -60,5 +60,16 @@ namespace Pokedex2022_CSharp
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ficha coso = new Ficha();
+            coso.Show();
+        }
     }
 }

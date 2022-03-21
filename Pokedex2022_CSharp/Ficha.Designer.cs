@@ -30,6 +30,8 @@ namespace Pokedex2022_CSharp
         private void InitializeComponent()
         {
             this.nombrePokemon = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // nombrePokemon
@@ -41,6 +43,14 @@ namespace Pokedex2022_CSharp
             this.nombrePokemon.TabIndex = 0;
             this.nombrePokemon.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(619, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(161, 186);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Ficha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -48,9 +58,11 @@ namespace Pokedex2022_CSharp
             this.BackgroundImage = global::Pokedex2022_CSharp.Properties.Resources.PokedexFicha;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nombrePokemon);
             this.Name = "Ficha";
             this.Text = "Ficha";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -58,5 +70,6 @@ namespace Pokedex2022_CSharp
         #endregion
 
         private System.Windows.Forms.Label nombrePokemon;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
