@@ -19,6 +19,7 @@ namespace Pokedex2022_CSharp
         public VentanaPrincipal()
         {
             InitializeComponent();
+            
         }
 
         private void izquierda_Click(object sender, EventArgs e)
@@ -32,6 +33,8 @@ namespace Pokedex2022_CSharp
             }
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            label1.Text = misPokemons.Rows[0]["peso"].ToString();
+            label2.Text = misPokemons.Rows[0]["altura"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
             
         }
@@ -53,6 +56,8 @@ namespace Pokedex2022_CSharp
             }
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            label1.Text = misPokemons.Rows[0]["peso"].ToString();
+            label2.Text = misPokemons.Rows[0]["altura"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
 
@@ -60,8 +65,12 @@ namespace Pokedex2022_CSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ficha coso = new Ficha(idActual);
-            coso.Show();
+            Ficha ficha = new Ficha(idActual);
+            ficha.Show();
+            if () { 
+                ficha.Close();
+            }
+            
         }
         
         private void VentanaPrincipal_Load(object sender, EventArgs e)

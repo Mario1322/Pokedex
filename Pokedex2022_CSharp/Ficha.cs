@@ -27,6 +27,12 @@ namespace Pokedex2022_CSharp
             label2.Text = misPokemons.Rows[0]["habilidad"].ToString();
             label3.Text = misPokemons.Rows[0]["especie"].ToString();
             label4.Text = misPokemons.Rows[0]["habitat"].ToString();
+            label7.Text = misPokemons.Rows[0]["movimiento1"].ToString();
+            label8.Text = misPokemons.Rows[0]["movimiento2"].ToString();
+            label7.Text = misPokemons.Rows[0]["movimiento3"].ToString();
+            label14.Text = misPokemons.Rows[0]["movimiento4"].ToString();
+            label12.Text = misPokemons.Rows[0]["tipo1"].ToString();
+            label13.Text = misPokemons.Rows[0]["tipo2"].ToString();
         }
         private Image convierteBlobAImagen(byte[] img)
         {
