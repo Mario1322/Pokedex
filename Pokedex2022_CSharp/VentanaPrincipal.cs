@@ -67,9 +67,7 @@ namespace Pokedex2022_CSharp
         {
             Ficha ficha = new Ficha(idActual);
             ficha.Show();
-            if () { 
-                ficha.Close();
-            }
+            
             
         }
         
